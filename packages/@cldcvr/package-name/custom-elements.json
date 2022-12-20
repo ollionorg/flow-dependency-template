@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "\"./components/f-welcome/f-welcome\""
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/shims.d.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "content",
+          "type": {
+            "text": "Record<string, string>"
+          }
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "content",
+            "module": "src/shims.d.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "content",
+            "module": "src/shims.d.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/f-welcome/f-welcome.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "FWelcome",
+          "members": [
+            {
+              "kind": "field",
+              "name": "message",
+              "type": {
+                "text": "string | undefined"
+              },
+              "attribute": "message",
+              "reflects": true
+            }
+          ],
+          "attributes": [
+            {
+              "name": "message",
+              "type": {
+                "text": "string | undefined"
+              },
+              "fieldName": "message"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "f-welcome",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "FWelcome",
+          "declaration": {
+            "name": "FWelcome",
+            "module": "src/components/f-welcome/f-welcome.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "f-welcome",
+          "declaration": {
+            "name": "FWelcome",
+            "module": "src/components/f-welcome/f-welcome.ts"
+          }
+        }
+      ]
+    }
+  ]
+}

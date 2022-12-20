@@ -1,0 +1,44 @@
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs";
+import { html } from "lit-html";
+
+<Meta
+  title="Components/f-welcome"
+  parameters={{
+    controls: { hideNoControlsWarning: true },
+  }}
+/>
+
+# f-welcome
+
+<br />
+<br />
+
+## Overview
+
+<f-divider></f-divider>
+
+f-welcome is sample component whihc displays message.
+
+<br />
+
+### [Playground](/story/components-f-spacer--playground)
+
+<Canvas>
+  <Story
+    name="Playground"
+    argTypes={{
+      message: {
+        control: "text",
+      },
+    }}
+    args={{
+      message: "Hello World!",
+    }}
+  >
+    {(args) => html`<f-welcome .message=${args.message}></f-welcome>`}
+  </Story>
+</Canvas>
+
+<br />
+
+<ArgsTable of={"f-welcome"} />
